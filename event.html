@@ -62,9 +62,9 @@
             </p>
         </article>
 
-        <h3 id="application">Anmälan till Defqon.1 2025</h3>
+        <h3>Anmälan till Defqon.1 2025</h3>
 
-        <form action="" method="get">
+        <form id="application" action="" method="get">
 
             <p>
                 <label for="name">Ange ditt namn</label>
@@ -78,7 +78,8 @@
                 <input type="email" id="email" name="email" placeholder="Ex email@domain.se" required>
             </p>
 
-            <p>
+            <!-- w3c klagar på paragraph runt ett fieldset -->
+            <!-- fieldset är ett blockelement, br istället för radbrytning -->
             <fieldset>
                 <legend>Ange vilka datum du vill deltaga</legend>
                 <input type="checkbox" name="26" id="26">
@@ -93,16 +94,13 @@
                 <input type="checkbox" name="29" id="29">
                 <label for="29">29 juni</label>
             </fieldset>
-            </p>
-
-            <p>
+            <br>
             <fieldset>
                 <legend>Hur vill du bo under eventet?</legend>
                 <input type="radio" name="accommodation" id="tent" value="tent" checked><label for="tent">Tält</label>
                 <input type="radio" name="accommodation" id="cabin" value="cabin"><label for="cabin">Stuga</label>
                 <input type="radio" name="accommodation" id="hotel" value="hotel"><label for="hotel">Hotell</label>
             </fieldset>
-            </p>
 
             <p>
                 <label for="food">Välj matpaket:</label>
