@@ -30,6 +30,50 @@
             <figcaption>Tryck på bilden för att komma till Defqon 1:s officiella hemsida</figcaption>
         </figure>
 
+        <form action="" method="get">
+
+            <p>
+                <label for="name">Ange ditt namn</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="För- och efternamn" required>
+            </p>
+
+            <p>
+                <label for="email">E-post</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Ex email@domain.se" required>
+            </p>
+
+            <p>
+            <fieldset>
+                <legend>Ange vilka datum du vill deltaga</legend>
+                <input type="checkbox" name="26" id="26">
+                <label for="26">26 juni</label>
+                <br>
+                <input type="checkbox" name="27" id="27">
+                <label for="27">27 juni</label>
+                <br>
+                <input type="checkbox" name="28" id="28">
+                <label for="28">28 juni</label>
+                <br>
+                <input type="checkbox" name="29" id="29">
+                <label for="29">29 juni</label>
+            </fieldset>
+            </p>
+
+
+
+            <p>
+                <label for="letter">Något annat du vill tillägga?</label>
+                <br>
+                <textarea name="letter" id="letter" rows="10" cols="51"></textarea>
+            </p>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Skicka">
+
+        </form>
+
     </main>
 
     <hr>
